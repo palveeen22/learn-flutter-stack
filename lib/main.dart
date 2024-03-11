@@ -1,35 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:learn_layout_flutter/widgets/BottomTab.dart';
 
-//import screens here
-import 'package:learn_layout_flutter/screens/Product_Screen.dart';
+/// Flutter code sample for [BottomNavigationBar].
 
-void main() {
-  runApp(const MaterialApp(
-    title: 'Navigation Basics',
-    home: FirstRoute(),
-  ));
-}
+void main() => runApp(const BottomNavigationBarExampleApp());
 
-class FirstRoute extends StatelessWidget {
-  const FirstRoute({super.key});
+class BottomNavigationBarExampleApp extends StatelessWidget {
+  const BottomNavigationBarExampleApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('First Route'),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          child: const Text('To Second'),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const SecondRoute()),
-            );
-          },
-        ),
-      ),
+    return const MaterialApp(
+      home: BottomNavigationBarExample(),
     );
   }
 }
