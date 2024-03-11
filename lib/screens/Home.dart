@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_layout_flutter/constants/Colors.dart';
 // import 'package:learn_layout_flutter/screens/Product_Details.dart';
 
 void main() => runApp(const HomeScreen());
@@ -13,6 +14,9 @@ class HomeScreen extends StatelessWidget {
     return MaterialApp(
       title: appTitle,
       home: MyHomePage(title: appTitle),
+      theme: ThemeData(
+        backgroundColor: tdBlue,
+      ),
     );
   }
 }
