@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_layout_flutter/screens/Product_Details.dart';
+import 'package:learn_layout_flutter/tabs/tabs.dart';
 
 class SecondRoute extends StatelessWidget {
   const SecondRoute({super.key});
