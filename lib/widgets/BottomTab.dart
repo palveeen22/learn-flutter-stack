@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_layout_flutter/screens/Home.dart';
+import 'package:learn_layout_flutter/screens/Placeholder.dart';
 import 'package:learn_layout_flutter/screens/Product_Drop.dart';
 import 'package:learn_layout_flutter/screens/Product_Screen.dart';
 
@@ -43,7 +44,8 @@ class _BottomNavigationBarExampleState
     //   style: optionStyle,
     // ),
     ExampleDragAndDrop(),
-    SecondRoute()
+    // SecondRoute()
+    FetchApp()
   ];
 
   void _onItemTapped(int index) {
