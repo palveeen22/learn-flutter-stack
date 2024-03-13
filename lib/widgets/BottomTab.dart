@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_layout_flutter/screens/Home.dart';
+import 'package:learn_layout_flutter/screens/Product_Drop.dart';
 import 'package:learn_layout_flutter/screens/Product_Screen.dart';
 
 /// Flutter code sample for [BottomNavigationBar].
@@ -12,6 +13,7 @@ class BottomNavigationBarExampleApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: BottomNavigationBarExample(),
     );
   }
@@ -36,10 +38,11 @@ class _BottomNavigationBarExampleState
     //   style: optionStyle,
     // ),
     HomeScreen(),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
+    // Text(
+    //   'Index 1: Business',
+    //   style: optionStyle,
+    // ),
+    ExampleDragAndDrop(),
     SecondRoute()
   ];
 
