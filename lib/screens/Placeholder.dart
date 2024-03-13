@@ -11,6 +11,9 @@ Future<List<Album>> fetchAlbums() async {
     // Mengubah JSON response menjadi List of Map
     final List<dynamic> jsonList = jsonDecode(response.body);
 
+    // Mencetak list JSON ke konsol debug
+    print(jsonList);
+
     // Mengubah List of Map menjadi List of Album
     final List<Album> albums =
         jsonList.map((json) => Album.fromJson(json)).toList();

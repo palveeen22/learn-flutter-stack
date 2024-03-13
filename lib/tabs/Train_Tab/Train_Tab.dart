@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_layout_flutter/screens/Image.dart';
 
 class TrainTab extends StatelessWidget {
   const TrainTab({Key? key}) : super(key: key);
@@ -21,7 +22,8 @@ class TrainTab extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20), // Add some space between title and icon
-            Icon(Icons.directions_transit),
+            // Icon(Icons.directions_transit),
+            MyApp()
           ],
         ),
       ),
