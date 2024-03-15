@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:learn_layout_flutter/constants/Colors.dart';
-// import 'package:learn_layout_flutter/screens/Product_Details.dart';
+import 'package:learn_layout_flutter/screens/ToDo_Screen.dart';
 
 void main() => runApp(const HomeScreen());
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
-
   static const appTitle = 'Drawer Demo';
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: appTitle,
-      home: MyHomePage(title: appTitle),
+      home: const MyHomePage(title: appTitle),
       theme: ThemeData(
         backgroundColor: tdBlue,
       ),
@@ -34,6 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+  // importnya disni untuk screennya
   static const List<Widget> _widgetOptions = <Widget>[
     Text(
       'Index 0: Home',
@@ -43,10 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
       'Index 1: Business',
       style: optionStyle,
     ),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
+    ToDoScreen()
   ];
 
   void _onItemTapped(int index) {
@@ -89,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             ListTile(
-              title: const Text('School'),
+              title: const Text('To Do Screen'),
               selected: _selectedIndex == 2,
               onTap: () {
                 _onItemTapped(2);
