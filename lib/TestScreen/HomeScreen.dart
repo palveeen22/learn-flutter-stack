@@ -24,12 +24,8 @@ class _HomeScreen extends State<HomeScreen> {
         title: Text('Home Screen'),
       ),
       body: Center(
-        // child: Text(
-        //   'Welcome to Home Screen!',
-        //   style: TextStyle(fontSize: 24),
-        // ),
         child: ElevatedButton(
-          child: const Text('To'),
+          child: const Text('To School'),
           onPressed: () {
             Navigator.push(
               context,
@@ -38,13 +34,13 @@ class _HomeScreen extends State<HomeScreen> {
           },
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          // Add your onPressed action here
-          print('Floating Action Button pressed');
-        },
-        child: Icon(Icons.add),
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {
+      //     // Add your onPressed action here
+      //     print('Floating Action Button pressed');
+      //   },
+      //   child: Icon(Icons.add),
+      // ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
